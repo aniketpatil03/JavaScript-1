@@ -9,7 +9,10 @@ const objectArr = [
 
 
 objectArr.sort(function (person1, person2){
-  return person2.first_name.localeCompare(person1.first_name)
+    if(person1.firstname === person2.firstname){
+        return person2.last_name.localeCompare(person1.last_name)
+    }
+    return person2.first_name.localeCompare(person1.first_name)
   }
 )
 
