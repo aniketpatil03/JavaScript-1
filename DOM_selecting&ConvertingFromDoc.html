@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>1</div>
+    <script>
+      function init1() {
+        // Selecting Element from Document, we get array like list "HTML Collection" of list of elements
+        var divElements = document.getElementsByTagName("div");
+        // Conversion from array like list to Array using Array.from()
+        console.log(Array.from(divElements));
+      }
+      init1();
+    </script>
+  </body>
+</html>
