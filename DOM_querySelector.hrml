@@ -1,0 +1,29 @@
+!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="news">
+            <h1>headline</h1>
+            <p>news 1</p>
+            <p>news 2</p>
+        </div>
+        <p>This is diff</p>
+
+        <script>
+        function init() {
+            // const pTag = document.querySelector("div > p")               get onlt first occurance of p tag
+            const pTag = document.querySelectorAll("div > p")                  // gets all p in div
+            // const pTag = document.querySelectorAll("div > p")                   // gets all p
+
+            console.log(pTag);                  
+        }
+        init()
+            
+        </script>
+    </body>
+</html>
