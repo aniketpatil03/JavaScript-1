@@ -1,0 +1,35 @@
+<!-- Appending to An Inner HTML -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="mylist">
+        <li>list-item 1</li>
+        <li>list-item 2</li>
+        <li>list-item 3</li>
+        <li>list-item 4</li>
+        <li>list-item 5</li>
+    </ul>
+    
+    <script>
+        // method-1
+        // let existingDOMNode = document.getElementById("mylist");
+        // existingDOMNode.innerHTML = existingDOMNode.innerHTML +" <li>list-item 6</li>";
+
+        // method-2 
+        let existingDOMNode = document.getElementById("mylist");
+        let newElement = document.createElement("li");
+        newElement.textContent = "list-item 6";
+
+        existingDOMNode.append(newElement)
+    </script>
+</body>
+</html>
